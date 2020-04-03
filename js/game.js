@@ -4,28 +4,28 @@ const ctx = canvas.getContext("2d");
 const hero = localStorage.getItem('hero');
 
 const pole = new Image(); 
-pole.src = "../img/pole.png"; 
+pole.src = "img/pole.png"; 
 
 let food_img = new Image(); 
 
 function foodImgSrc(h) {
 	if (h == "bely")
-	    food_img.src = `../img/food/food_bely/food_bely_${getRandomInt(3)}.png`;
+	    food_img.src = `img/food/food_bely/food_bely_${getRandomInt(3)}.png`;
 	else 
-		food_img.src = `../img/food/food_${getRandomInt(9)}.png`;
+		food_img.src = `img/food/food_${getRandomInt(9)}.png`;
 }
 
 foodImgSrc(hero);
 
 const face = new Image(); 
-face.src = `../img/face/face_${hero}.jpg`; 
+face.src = `img/face/face_${hero}.jpg`; 
 
 const body = new Image(); 
 function bodyImgSrc(h) {
 //	if (h == "jeka")
 //		body.src = `img/body/body_jeka/body_jeka_${getRandomInt(7)}.png`; 
 //	else 
-		body.src = `../img/body/body_${hero}.png`; 
+		body.src = `img/body/body_${hero}.png`; 
 	return body; 
 }
 
