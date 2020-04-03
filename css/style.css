@@ -1,0 +1,120 @@
+canvas {
+	display: 	block;	
+	margin: 	0 auto; 
+}
+
+
+  div.sell { 
+   width: 100%;
+   text-align: center; 
+  }
+
+
+
+.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 4px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+
+   margin-left: auto;
+   margin-right: auto;
+   width: 6em
+} 
+.button7:hover { background: rgb(53, 167, 110); }
+.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+
+}
+
+body {background: #d6eaf8}
+.button6 {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+.button6:hover {background-position: right center;}
+
+body {background: #1D1B26;}
+.button5{
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+.button5:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+.button5:hover {background: rgba(255,255,255,0);}
+.button5:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+
+body {background: #1b2631;}
+.button9 {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+  font-family: 'Montserrat', sans-serif; 
+  transition: .4s;
+}
+.button9:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0,0,0,0);
+  transition: .4s;
+}
+.button9:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
